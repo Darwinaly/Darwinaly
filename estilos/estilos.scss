@@ -1,0 +1,723 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /*height: 100%;*/
+}
+
+$colorFuente: #b88900;
+$blanco: white;
+$pxcien: 100px;
+$tema:blanc;
+
+
+
+
+@media (min-width:320px) and (max-width:767px){
+
+    .navbar{ grid-area: navbar;}
+    .div{grid-area: div;}
+    .divServicios{grid-area: divServicios;}
+    .carrusel{grid-area: carrusel;}
+    .contacto{grid-area: contacto;}
+    .preguntasFrecuentes{grid-area: preguntasFrecuentes;}
+
+    .main{
+        display: grid;
+        grid-template:  "navbar"         
+                        "div"
+                        "carrusel"
+                        "divServicios"
+                        "preguntasFrecuentes"
+                        "contacto";
+    }
+
+
+    .navbar {
+        height: 90px;
+    }
+
+    .div{
+        @if $tema==blanco{
+            // background-image: url(img/blanco.jpg);
+            background-color: white;
+        }
+
+        @else {
+            // background-image: url(img/fondoPreguntas.png);
+            background-color: #464242;
+        }
+        background-size: auto;
+        background-repeat: repeat;
+        height: auto;
+        text-align: center;
+        width: 100%;
+        .div__h1{
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: 2em;
+            color: $colorFuente;
+            padding-top: 10%;
+
+            @if $tema==blanco{
+                color: black;
+            }
+
+            @else {
+                color: $colorFuente;
+            }
+             
+        }
+
+        .div__p{
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: $pxcien - 80px;
+            color: $colorFuente;
+            margin: 10%;
+
+            @if $tema==blanco{
+                color: black;
+            }
+
+            @else {
+                color: $colorFuente;
+            }
+        }
+        .div__btn{
+            width: 50%;
+            margin: $pxcien - 80px;
+        }
+    }
+
+    .divServicios{
+        height: auto;
+        width: 100%;
+        background-color: $blanco;
+        text-align: center;
+
+        hr {
+            margin-top: 0;
+        
+        }
+
+        h3{
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: 1.8em;
+            font-weight: 900;
+            color: $colorFuente;  
+            margin-top: $pxcien - 40px;          
+        }       
+
+        .divServicios__servicio1{
+            height: $pxcien + 200px;
+            text-align: center;
+            h2{
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                padding-top: 10%;
+                font-size: 1.2em;
+                font-weight: 900;
+            }
+            .divServicios__btn{
+                height: $pxcien - 70px;
+                width: 85%;
+                margin-top: $pxcien - 95px;
+            }
+
+        }
+        .divServicios__servicio2{
+            height: 300px;
+            text-align: center;
+            h2{
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                padding-top: 10%;
+                font-size: 1.2em;
+                font-weight: 900;
+            }
+            .divServicios__btn{
+                height: 30px;
+                width: 85%;
+                margin-top: 5px;
+            }
+
+
+        }
+        .divServicios__servicio3{
+            height: 300px;
+            text-align: center;
+            h2{
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                padding-top: 10%;
+                font-size: 1.2em;
+                font-weight: 900;
+            }
+            .divServicios__btn{
+                height: 30px;
+                width: 85%;
+                margin-top: 5px;
+            }
+
+        }
+
+    }
+
+    .carrusel{
+        @if $tema==blanco{
+            background-color: $blanco;
+        }
+
+        @else {
+            background-color: #9e9e9e;
+        }
+        height: auto;
+        width: 100%;
+        text-align: center;
+        .fondoPreguntas{
+            margin-top: 5%;
+            margin-block-end: 20%;
+            height: 8rem;
+            width: auto;
+        }
+        h2{
+            font-size: 1.2em;
+            @if $tema==blanco{
+                color: black;
+            }
+    
+            @else {
+                color: white;
+            }
+        }
+
+        p{
+            font-size: 1em;
+        }
+    }
+
+    .preguntasFrecuentes{
+        height: auto;
+        width: 100%;
+        background-color: $blanco;
+        text-align: center;
+        h3{
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: 1.8em;
+            font-weight: 900;
+            color: $colorFuente;  
+            margin-top: 60px;          
+        }  
+        .btnPreguntasFrec{
+            margin-top: 5%;
+            margin-block-end: 5%;
+            padding: 1%;
+            height: 80px;
+            width: 90%;
+            background-color: #3b3b3b;
+            color: $blanco;
+        }
+    }
+
+    .contacto{
+        height: 700px;
+        width: 100%;
+        background-color: black;
+        .form-group{
+            width: 80%;
+            margin-left: 10%;
+            padding-top: 4%;
+        }
+        h4{
+            color: $blanco;
+            font-size: 20px;
+            margin-top: 10%;
+        }
+        .btn{
+            width: 30%;
+            margin-left: 13%;
+        }
+    }
+
+    .subir{
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        
+    }
+
+   
+    
+}
+
+
+
+@media (min-width:768px) and (max-width:900px){
+
+    .navbar{ grid-area: navbar;}
+    .div{grid-area: div;}
+    .divServicios{grid-area: divServicios;}
+    .carrusel{grid-area: carrusel;}
+    .contacto{grid-area: contacto;}
+    .preguntasFrecuentes{grid-area: preguntasFrecuentes;}
+
+    .main{
+        display: grid;
+        grid-template:  "navbar"         
+                        "div"
+                        "carrusel"
+                        "divServicios"
+                        "preguntasFrecuentes"
+                        "contacto";
+    }
+
+    .h3NuestrosServicios {grid-area: h3NuestrosServicios;}
+    .divServicios__servicio1{grid-area: divServicios__servicio1;}
+    .divServicios__servicio2{grid-area: divServicios__servicio2;}
+    .divServicios__servicio3{grid-area: divServicios__servicio3;}
+
+    .divServicios{
+        display: grid;
+        grid-template:  "h3NuestrosServicios h3NuestrosServicios h3NuestrosServicios"
+                        "divServicios__servicio1 divServicios__servicio2 divServicios__servicio3";
+    }
+
+    .h3pf{grid-area: h3pf;}
+    .pf1 {grid-area: pf1;}
+    .pf2 {grid-area: pf2;}
+    .pf3 {grid-area: pf3;}
+    .pf4 {grid-area: pf4;}
+    .pf5 {grid-area: pf5;}
+    .pf6 {grid-area: pf6;}
+
+    .preguntasFrecuentes{
+        display: grid;
+        grid-template:  "h3pf h3pf h3pf"
+                        "pf1 pf2 pf3"
+                        "pf4 pf5 pf6";
+    }
+
+    .navbar {
+        height: 90px;
+    }
+
+    .div{
+        background-image: url(img/fondoPreguntas.png);
+        background-size: auto;
+        background-repeat: repeat;
+        height: auto;
+        text-align: center;
+        width: 100%;
+        .div__h1{
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: 3em;
+            color: $colorFuente;
+            padding-top: 3%;
+        }
+        .div__p{
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: 1.5em;
+            color: $colorFuente;
+            margin: 3%;
+        }
+        .div__btn{
+            height: 40px;
+            width: 50%;
+            margin: 20px;
+        }
+    }
+
+    .divServicios{
+        height: auto;
+        width: 100%;
+        background-color: $blanco;
+        text-align: center;
+
+
+        h3{
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: 3em;
+            font-weight: 900;
+            color: $colorFuente;  
+            margin-top: 60px;          
+        }       
+
+        .divServicios__servicio1{
+            height: auto;
+            text-align: center;
+            h2{
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                padding-top: 40px;
+                font-size: 1.2em;
+                font-weight: 900;
+            }
+            .divServicios__btn{
+                height: 50px;
+                width: 85%;
+                margin-top: 5px;
+            }
+
+        }
+        .divServicios__servicio2{
+            height: auto;
+            text-align: center;
+            h2{
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                padding-top: 40px;
+                font-size: 1.2em;
+                font-weight: 900;
+            }
+            .divServicios__btn{
+                height: 50px;
+                width: 85%;
+                margin-top: 5px;
+            }
+
+
+        }
+        .divServicios__servicio3{
+            height: auto;
+            text-align: center;
+            h2{
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                padding-top: 40px;
+                font-size: 1.2em;
+                font-weight: 900;
+            }
+            .divServicios__btn{
+                height: 50px;
+                width: 85%;
+                margin-top: 5px;
+            }
+
+        }
+
+    }
+
+    .carrusel{
+        background-color: #747474;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        .fondoPreguntas{
+            margin-top: 5%;
+            margin-block-end: 15%;
+            height: 9rem;
+            width: auto;
+        }
+        h2{
+            font-size: 2em;
+        }
+    }
+
+    .preguntasFrecuentes{
+        height: auto;
+        width: 100%;
+        background-color: $blanco;
+        text-align: center;
+        h3{
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: 3em;
+            font-weight: 900;
+            color: $colorFuente;  
+            margin-top: 60px;          
+        }  
+        .btnPreguntasFrec{
+            margin-top: 1%;
+            margin-block-end: 1%;
+            padding: 1%;
+            height: 100px;
+            width: 95%;
+            background-color: #3b3b3b;
+            color: $blanco;
+        }   div{
+            margin: 5%;
+        }
+    }
+
+    .contacto{
+        height: 700px;
+        width: 100%;
+        background-color: black;
+        .form-group{
+            width: 80%;
+            margin-left: 10%;
+            padding-top: 4%;
+        }
+        h4{
+            color: $blanco;
+            font-size: 20px;
+            margin-top: 10%;
+        }
+        .btn{
+            width: 30%;
+            margin-left: 13%;
+        }
+    }
+
+    .subir{
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        
+    }
+}
+
+@media (min-width:901px){
+
+    .navbar{ grid-area: navbar;}
+    .div{grid-area: div;}
+    .divServicios{grid-area: divServicios;}
+    .carrusel{grid-area: carrusel;}
+    .contacto{grid-area: contacto;}
+    .preguntasFrecuentes{grid-area: preguntasFrecuentes;}
+
+    .main{
+        display: grid;
+        grid-template:  "navbar"         
+                        "div"
+                        "carrusel"
+                        "divServicios"
+                        "preguntasFrecuentes"
+                        "contacto";
+    }
+
+    .h3NuestrosServicios {grid-area: h3NuestrosServicios;}
+    .divServicios__servicio1{grid-area: divServicios__servicio1;}
+    .divServicios__servicio2{grid-area: divServicios__servicio2;}
+    .divServicios__servicio3{grid-area: divServicios__servicio3;}
+
+    .divServicios{
+        display: grid;
+        grid-template:  "h3NuestrosServicios h3NuestrosServicios h3NuestrosServicios"
+                        "divServicios__servicio1 divServicios__servicio2 divServicios__servicio3";
+    }
+
+    .h3pf{grid-area: h3pf;}
+    .pf1 {grid-area: pf1;}
+    .pf2 {grid-area: pf2;}
+    .pf3 {grid-area: pf3;}
+    .pf4 {grid-area: pf4;}
+    .pf5 {grid-area: pf5;}
+    .pf6 {grid-area: pf6;}
+
+    .preguntasFrecuentes{
+        display: grid;
+        grid-template:  "h3pf h3pf h3pf"
+                        "pf1 pf2 pf3"
+                        "pf4 pf5 pf6";
+    }
+
+    .divH1P{grid-area: divH1P;}
+    .divBtn{grid-area: divBtn;}
+
+    .div{
+        display: grid;
+        grid-template:  "divH1P divH1P divBtn"/
+                            33% auto 33%;
+    }
+
+    .divForm1 {grid-area: divForm1;}
+    .divForm2 {grid-area: divForm2;}
+
+    .divForm__cuerpo{
+        display: grid;
+        grid-template: "divForm1 divForm2"/
+                            60% 40%;
+    }
+
+    .navbar {
+        height: 90px;
+        .navbar-nav{
+            text-align: right;
+        }
+    }
+
+    .div{
+        background-image: url(img/fondoPreguntas.png);
+        background-size: auto;
+        background-repeat: repeat;
+        height: 500px;
+        text-align: center;
+        width: 100%;
+        .divH1P{
+            text-align: left;
+            .div__h1{
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                font-size: 4em;
+                color: $colorFuente;
+                padding-top: 8%;
+                margin: 3%;
+            }
+            .div__p{
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                font-size: 1.5em;
+                color: $colorFuente;
+                padding-top: 4%;
+                margin: 3%;
+            }
+        }
+        .divBtn{
+            align-items: center;
+            margin: auto;
+            width: 100%;
+            .div__btn{
+                height: 50px;
+                width: 80%;
+                margin: 2px;
+            }
+        }
+
+    }
+
+    .divServicios{
+        height: auto;
+        width: 100%;
+        background-color: $blanco;
+        text-align: center;
+
+
+        h3{
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: 3em;
+            font-weight: 900;
+            color: $colorFuente;  
+            margin-top: 60px;          
+        }       
+
+        .divServicios__servicio1{
+            height: auto;
+            text-align: center;
+            h2{
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                padding-top: 40px;
+                font-size: 1.2em;
+                font-weight: 900;
+            }
+            .divServicios__btn{
+                height: 50px;
+                width: 85%;
+                margin-top: 5px;
+            }
+
+        }
+        .divServicios__servicio2{
+            height: auto;
+            text-align: center;
+            h2{
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                padding-top: 40px;
+                font-size: 1.2em;
+                font-weight: 900;
+            }
+            .divServicios__btn{
+                height: 50px;
+                width: 85%;
+                margin-top: 5px;
+            }
+
+
+        }
+        .divServicios__servicio3{
+            height: auto;
+            text-align: center;
+            h2{
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                padding-top: 40px;
+                font-size: 1.2em;
+                font-weight: 900;
+            }
+            .divServicios__btn{
+                height: 50px;
+                width: 85%;
+                margin-top: 5px;
+            }
+
+        }
+
+    }
+
+    .carrusel{
+        background-color: #747474;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        .fondoPreguntas{
+            margin-top: 5%;
+            margin-block-end: 15%;
+            height: 9rem;
+            width: auto;
+        }
+        h2{
+            font-size: 2em;
+        }
+    }
+
+    .preguntasFrecuentes{
+        height: auto;
+        width: 100%;
+        background-color: $blanco;
+        text-align: center;
+        h3{
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: 3em;
+            font-weight: 900;
+            color: $colorFuente;  
+            margin-top: 60px;          
+        }  
+        .btnPreguntasFrec{
+            margin-top: 1%;
+            margin-block-end: 1%;
+            padding: 1%;
+            height: 100px;
+            width: 95%;
+            background-color: #3b3b3b;
+            color: $blanco;
+        }   div{
+            margin: 5%;
+        }
+    }
+
+    .contacto{
+        height: auto;
+        width: 100%;
+        background-color: black;
+        .form-group{
+            width: 90%;
+            margin-left: 10%;
+            padding-top: 3%;
+        }
+        h4{
+            color: $blanco;
+            font-size: 20px;
+            margin-top: 10%;
+        }
+        .divForm2{
+            margin: auto;
+            text-align: center;
+            width: 100%;
+            .btn{
+                width: 70%;
+                margin-left: 13%;
+                margin-top: 5%;
+            }
+        }
+
+    }
+
+    .subir{
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        
+    }
+}
+
+ 
+
