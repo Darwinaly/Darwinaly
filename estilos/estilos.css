@@ -172,6 +172,17 @@ html {
     width: 100%;
     background-color: black;
   }
+  .contacto .divForm {
+    grid-area: divForm;
+  }
+  .contacto .pieFooter {
+    grid-area: pieFooter;
+  }
+  .contacto .contacto {
+    display: -ms-grid;
+    display: grid;
+    grid-template: "divForm"          "pieFooter";
+  }
   .contacto .form-group {
     width: 80%;
     margin-left: 10%;
@@ -185,6 +196,17 @@ html {
   .contacto .btn {
     width: 30%;
     margin-left: 13%;
+  }
+  .contacto .pieFooter {
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+  }
+  .contacto .pieFooter img {
+    margin: 20px;
+    height: 30px;
+    width: auto;
   }
   .subir {
     height: 40px;
@@ -408,6 +430,17 @@ html {
   .contacto .btn {
     width: 30%;
     margin-left: 13%;
+  }
+  .contacto .pieFooter {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+  }
+  .contacto .pieFooter img {
+    margin: 20px;
+    height: 30px;
+    width: auto;
   }
   .subir {
     height: 40px;
@@ -674,6 +707,17 @@ html {
     width: 70%;
     margin-left: 13%;
     margin-top: 5%;
+  }
+  .contacto .pieFooter {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+  }
+  .contacto .pieFooter img {
+    margin: 20px;
+    height: 30px;
+    width: auto;
   }
   .subir {
     height: 40px;
