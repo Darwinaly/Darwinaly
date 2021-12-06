@@ -172,6 +172,17 @@ html {
     width: 100%;
     background-color: black;
   }
+  .contacto .divForm {
+    grid-area: divForm;
+  }
+  .contacto .pieFooter {
+    grid-area: pieFooter;
+  }
+  .contacto .contacto {
+    display: -ms-grid;
+    display: grid;
+    grid-template: "divForm"          "pieFooter";
+  }
   .contacto .form-group {
     width: 80%;
     margin-left: 10%;
@@ -186,12 +197,43 @@ html {
     width: 30%;
     margin-left: 13%;
   }
+  .contacto .pieFooter {
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+  }
+  .contacto .pieFooter img {
+    margin: 20px;
+    height: 30px;
+    width: auto;
+  }
   .subir {
     height: 40px;
     width: 40px;
     position: fixed;
     bottom: 50px;
     right: 20px;
+  }
+  article {
+    border: #3b3b3b;
+    border-style: solid;
+    border-width: 15px;
+  }
+  article img {
+    width: 90%;
+    margin: 5%;
+  }
+  article h4 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .articulosEspecificos h4 {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  .articulosEspecificos p {
+    margin: 15px;
   }
 }
 
@@ -409,12 +451,66 @@ html {
     width: 30%;
     margin-left: 13%;
   }
+  .contacto .pieFooter {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+  }
+  .contacto .pieFooter img {
+    margin: 20px;
+    height: 30px;
+    width: auto;
+  }
   .subir {
     height: 40px;
     width: 40px;
     position: fixed;
     bottom: 50px;
     right: 20px;
+  }
+  .articulo1 {
+    grid-area: articulo1;
+  }
+  .articulo2 {
+    grid-area: articulo2;
+  }
+  .articulo3 {
+    grid-area: articulo3;
+  }
+  .articulo4 {
+    grid-area: articulo4;
+  }
+  .articulo5 {
+    grid-area: articulo5;
+  }
+  .articulo6 {
+    grid-area: articulo6;
+  }
+  .articulos {
+    display: -ms-grid;
+    display: grid;
+    grid-template: "articulo1 articulo2" "articulo3 articulo4" "articulo5 articulo6";
+  }
+  article {
+    border: #3b3b3b;
+    border-style: solid;
+    border-width: 15px;
+  }
+  article img {
+    width: 90%;
+    margin: 5%;
+  }
+  article h4 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .articulosEspecificos h4 {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  .articulosEspecificos p {
+    margin: 15px;
   }
 }
 
@@ -675,12 +771,66 @@ html {
     margin-left: 13%;
     margin-top: 5%;
   }
+  .contacto .pieFooter {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+  }
+  .contacto .pieFooter img {
+    margin: 20px;
+    height: 30px;
+    width: auto;
+  }
   .subir {
     height: 40px;
     width: 40px;
     position: fixed;
     bottom: 50px;
     right: 20px;
+  }
+  .articulo1 {
+    grid-area: articulo1;
+  }
+  .articulo2 {
+    grid-area: articulo2;
+  }
+  .articulo3 {
+    grid-area: articulo3;
+  }
+  .articulo4 {
+    grid-area: articulo4;
+  }
+  .articulo5 {
+    grid-area: articulo5;
+  }
+  .articulo6 {
+    grid-area: articulo6;
+  }
+  .articulos {
+    display: -ms-grid;
+    display: grid;
+    grid-template: "articulo1 articulo2 articulo3" "articulo4 articulo5 articulo6";
+  }
+  article {
+    border: #3b3b3b;
+    border-style: solid;
+    border-width: 15px;
+  }
+  article img {
+    width: 90%;
+    margin: 5%;
+  }
+  article h4 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .articulosEspecificos h4 {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  .articulosEspecificos p {
+    margin: 15px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
