@@ -48,16 +48,16 @@ html {
   .div .div__h1 {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-size: 2em;
-    color: #b88900;
+    color: black;
     padding-top: 10%;
-    color: #b88900;
+    color: black;
   }
   .div .div__p {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-size: 20px;
-    color: #b88900;
+    color: black;
     margin: 10%;
-    color: #b88900;
+    color: black;
   }
   .div .div__btn {
     width: 50%;
@@ -76,7 +76,7 @@ html {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-size: 1.8em;
     font-weight: 900;
-    color: #b88900;
+    color: black;
     margin-top: 60px;
   }
   .divServicios .divServicios__servicio1 {
@@ -154,7 +154,7 @@ html {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-size: 1.8em;
     font-weight: 900;
-    color: #b88900;
+    color: black;
     margin-top: 60px;
   }
   .preguntasFrecuentes .btnPreguntasFrec {
@@ -318,13 +318,13 @@ html {
   .div .div__h1 {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-size: 3em;
-    color: #b88900;
+    color: black;
     padding-top: 3%;
   }
   .div .div__p {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-size: 1.5em;
-    color: #b88900;
+    color: black;
     margin: 3%;
   }
   .div .div__btn {
@@ -342,7 +342,7 @@ html {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-size: 3em;
     font-weight: 900;
-    color: #b88900;
+    color: black;
     margin-top: 60px;
   }
   .divServicios .divServicios__servicio1 {
@@ -416,7 +416,7 @@ html {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-size: 3em;
     font-weight: 900;
-    color: #b88900;
+    color: black;
     margin-top: 60px;
   }
   .preguntasFrecuentes .btnPreguntasFrec {
@@ -536,10 +536,7 @@ html {
   .main {
     display: -ms-grid;
     display: grid;
-    grid-template: "navbar"          "div" "carrusel" "divServicios" "preguntasFrecuentes" "contacto";
-  }
-  .h3NuestrosServicios {
-    grid-area: h3NuestrosServicios;
+    grid-template: "navbar navbar"          "div carrusel" "divServicios divServicios" "preguntasFrecuentes preguntasFrecuentes" "contacto contacto";
   }
   .divServicios__servicio1 {
     grid-area: divServicios__servicio1;
@@ -553,7 +550,7 @@ html {
   .divServicios {
     display: -ms-grid;
     display: grid;
-    grid-template: "h3NuestrosServicios h3NuestrosServicios h3NuestrosServicios" "divServicios__servicio1 divServicios__servicio2 divServicios__servicio3";
+    grid-template: "divServicios__servicio1 divServicios__servicio2 divServicios__servicio3" 400px;
   }
   .h3pf {
     grid-area: h3pf;
@@ -581,65 +578,62 @@ html {
     display: grid;
     grid-template: "h3pf h3pf h3pf" "pf1 pf2 pf3" "pf4 pf5 pf6";
   }
-  .divH1P {
-    grid-area: divH1P;
+  .divForm {
+    grid-area: divForm;
   }
-  .divBtn {
-    grid-area: divBtn;
+  .divMapa {
+    grid-area: divMapa;
   }
-  .div {
+  .divRedes {
+    grid-area: divRedes;
+  }
+  .contacto {
     display: -ms-grid;
     display: grid;
-    grid-template: "divH1P divH1P divBtn"/ 33% auto 33%;
-  }
-  .divForm1 {
-    grid-area: divForm1;
-  }
-  .divForm2 {
-    grid-area: divForm2;
-  }
-  .divForm__cuerpo {
-    display: -ms-grid;
-    display: grid;
-    grid-template: "divForm1 divForm2"/ 60% 40%;
+    grid-template: "divForm divMapa divRedes";
   }
   .navbar {
-    height: 90px;
+    height: 100px;
   }
   .navbar .navbar-nav {
     text-align: right;
   }
+  .navbar .navbar-brand {
+    font-size: 40px;
+  }
+  .navbar a {
+    font-size: 20px;
+    margin-right: 5px;
+    color: white;
+  }
   .div {
-    background-image: url(img/fondoPreguntas.png);
-    background-size: auto;
-    background-repeat: repeat;
+    float: left;
     height: 500px;
     text-align: center;
-    width: 100%;
-  }
-  .div .divH1P {
-    text-align: left;
+    width: 60%;
   }
   .div .divH1P .div__h1 {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-size: 4em;
-    color: #b88900;
+    color: black;
     padding-top: 8%;
     margin: 3%;
   }
   .div .divH1P .div__p {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-size: 1.5em;
-    color: #b88900;
+    color: black;
     padding-top: 4%;
-    margin: 3%;
+    margin: 5%;
+    margin-top: 2%;
   }
   .div .divBtn {
+    font-size: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin: auto;
-    width: 100%;
+    width: 50%;
   }
   .div .divBtn .div__btn {
     height: 50px;
@@ -647,78 +641,65 @@ html {
     margin: 2px;
   }
   .divServicios {
+    padding-top: 100px;
     height: auto;
     width: 100%;
-    background-color: white;
-    text-align: center;
-  }
-  .divServicios h3 {
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    font-size: 3em;
-    font-weight: 900;
-    color: #b88900;
-    margin-top: 60px;
   }
   .divServicios .divServicios__servicio1 {
     height: auto;
     text-align: center;
   }
-  .divServicios .divServicios__servicio1 h2 {
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    padding-top: 40px;
-    font-size: 1.2em;
-    font-weight: 900;
+  .divServicios .divServicios__servicio1 img {
+    width: 280px;
+    margin: auto;
   }
-  .divServicios .divServicios__servicio1 .divServicios__btn {
-    height: 50px;
-    width: 85%;
-    margin-top: 5px;
+  .divServicios .divServicios__servicio1 img:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  .divServicios .divServicios__servicio1 .btn {
+    margin-top: 20px;
   }
   .divServicios .divServicios__servicio2 {
     height: auto;
     text-align: center;
   }
-  .divServicios .divServicios__servicio2 h2 {
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    padding-top: 40px;
-    font-size: 1.2em;
-    font-weight: 900;
+  .divServicios .divServicios__servicio2 img {
+    width: 280px;
+    margin: auto;
   }
-  .divServicios .divServicios__servicio2 .divServicios__btn {
-    height: 50px;
-    width: 85%;
-    margin-top: 5px;
+  .divServicios .divServicios__servicio2 img:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  .divServicios .divServicios__servicio2 .btn {
+    margin-top: 20px;
   }
   .divServicios .divServicios__servicio3 {
     height: auto;
     text-align: center;
   }
-  .divServicios .divServicios__servicio3 h2 {
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    padding-top: 40px;
-    font-size: 1.2em;
-    font-weight: 900;
+  .divServicios .divServicios__servicio3 img {
+    width: 280px;
+    margin: auto;
   }
-  .divServicios .divServicios__servicio3 .divServicios__btn {
-    height: 50px;
-    width: 85%;
-    margin-top: 5px;
+  .divServicios .divServicios__servicio3 img:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  .divServicios .divServicios__servicio3 .btn {
+    margin-top: 20px;
   }
   .carrusel {
-    background-color: #747474;
-    height: auto;
-    width: 100%;
+    float: right;
+    height: 500px;
+    width: 40%;
     text-align: center;
   }
   .carrusel .fondoPreguntas {
-    margin-top: 5%;
-    -webkit-margin-after: 15%;
-            margin-block-end: 15%;
-    height: 9rem;
+    margin-top: 15%;
+    height: 400px;
     width: auto;
-  }
-  .carrusel h2 {
-    font-size: 2em;
   }
   .preguntasFrecuentes {
     height: auto;
@@ -730,7 +711,7 @@ html {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-size: 3em;
     font-weight: 900;
-    color: #b88900;
+    color: black;
     margin-top: 60px;
   }
   .preguntasFrecuentes .btnPreguntasFrec {
@@ -746,41 +727,67 @@ html {
   .preguntasFrecuentes div {
     margin: 5%;
   }
+  .separador {
+    width: 100%;
+    height: 50px;
+  }
+  .separador img {
+    width: 100%;
+    height: 100%;
+  }
+  .separador1 {
+    width: 100%;
+    height: 50px;
+  }
+  .separador1 img {
+    width: 100%;
+    height: 100%;
+  }
   .contacto {
     height: auto;
     width: 100%;
-    background-color: black;
+    text-align: left;
+    background-color: #116e79;
+    background-repeat: no-repeat;
+    background-position: right;
   }
   .contacto .form-group {
-    width: 90%;
-    margin-left: 10%;
-    padding-top: 3%;
+    width: 400px;
+    padding-top: 1%;
+    margin-left: 50px;
   }
-  .contacto h4 {
-    color: white;
-    font-size: 20px;
-    margin-top: 10%;
+  .contacto .btn {
+    width: 150px;
+    margin: 3%;
+    margin-left: 55px;
   }
-  .contacto .divForm2 {
-    margin: auto;
-    text-align: center;
-    width: 100%;
-  }
-  .contacto .divForm2 .btn {
-    width: 70%;
-    margin-left: 13%;
-    margin-top: 5%;
-  }
-  .contacto .pieFooter {
-    background-color: black;
-    text-align: center;
-    color: white;
-    padding-top: 50px;
-  }
-  .contacto .pieFooter img {
-    margin: 20px;
-    height: 30px;
+  .contacto .divMapa {
     width: auto;
+    margin-top: 20px;
+  }
+  .contacto .divMapa ul {
+    margin-left: 30px;
+    color: white;
+  }
+  .contacto .divMapa ul a {
+    color: white;
+  }
+  .contacto .divMapa p {
+    color: white;
+  }
+  .contacto .divRedes {
+    -ms-grid-column-align: end;
+        justify-self: end;
+    width: 30px;
+    margin-right: 25px;
+  }
+  .contacto .divRedes img {
+    margin-top: 75px;
+    width: 30px;
+  }
+  .contacto .divRedes img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
   .subir {
     height: 40px;
@@ -788,6 +795,10 @@ html {
     position: fixed;
     bottom: 50px;
     right: 20px;
+  }
+  .subir img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
   .articulo1 {
     grid-area: articulo1;
@@ -831,6 +842,53 @@ html {
   }
   .articulosEspecificos p {
     margin: 15px;
+  }
+  .tarjeta1 {
+    grid-area: tarjeta1;
+  }
+  .tarjeta2 {
+    grid-area: tarjeta2;
+  }
+  .tarjeta3 {
+    grid-area: tarjeta3;
+  }
+  .tarjeta4 {
+    grid-area: tarjeta4;
+  }
+  .divDetallesServicios {
+    display: -ms-grid;
+    display: grid;
+    grid-template: "tarjeta1 tarjeta2" "tarjeta3 tarjeta4";
+  }
+  .divDetallesServicios .tarjeta1 {
+    border: 2px solid #18a4b4;
+    margin-right: 20px;
+    -ms-grid-column-align: right;
+        justify-self: right;
+    width: 350px;
+    height: 400px;
+  }
+  .divDetallesServicios .tarjeta2 {
+    border: 2px solid #18a4b4;
+    margin-left: 20px;
+    width: 350px;
+    height: 400px;
+  }
+  .divDetallesServicios .tarjeta3 {
+    border: 2px solid #18a4b4;
+    margin-top: 20px;
+    margin-right: 20px;
+    -ms-grid-column-align: right;
+        justify-self: right;
+    width: 350px;
+    height: 400px;
+  }
+  .divDetallesServicios .tarjeta4 {
+    border: 2px solid #18a4b4;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 350px;
+    height: 400px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
