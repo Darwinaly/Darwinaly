@@ -722,7 +722,7 @@ $tema:blanc;
         text-align: center;
         .fondoPreguntas{
             margin-top: 15%;
-            height: 400px;
+            height: 300px;
             width: auto;
         }
     }
@@ -730,25 +730,23 @@ $tema:blanc;
     .preguntasFrecuentes{
         height: auto;
         width: 100%;
-        background-color: $blanco;
-        text-align: center;
-        h3{
-            font-family: 'Zen Kaku Gothic Antique', sans-serif;
-            font-size: 3em;
-            font-weight: 900;
-            color: $colorFuente;  
-            margin-top: 60px;          
-        }  
+        text-align: center; 
         .btnPreguntasFrec{
-            margin-top: 1%;
-            margin-block-end: 1%;
-            padding: 1%;
-            height: 100px;
-            width: 95%;
-            background-color: #3b3b3b;
-            color: $blanco;
-        }   div{
+            height: 200px;
+            width: 100%;
+            background-color:#0b4950 ;
+            color: white;
+        }  
+        p{
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: 20px;
+            margin: 5px;
+        } 
+        div{
             margin: 5%;
+        }
+        .btnPreguntasFrec:hover{
+            background-color:#1aa6b6 ;
         }
     }
 
@@ -880,6 +878,7 @@ $tema:blanc;
 
     .divDetallesServicios{
         .tarjeta1{
+            text-align: center;
             border: 2px solid #18a4b4 ;
             margin-right: 20px;
             justify-self: right;
@@ -887,12 +886,14 @@ $tema:blanc;
             height: 400px;
         }
         .tarjeta2{
+            text-align: center;
             border: 2px solid #18a4b4 ;
             margin-left: 20px;
             width: 350px;
             height: 400px;
         }
         .tarjeta3{
+            text-align: center;
             border: 2px solid #18a4b4 ;
             margin-top: 20px;
             margin-right: 20px;
@@ -901,11 +902,23 @@ $tema:blanc;
             height: 400px;
         }
         .tarjeta4{
+            text-align: center;
             border: 2px solid #18a4b4 ;
             margin-top: 20px;
             margin-left: 20px;
             width: 350px;
             height: 400px;
+        }
+        h3{
+            margin-top: 50px;
+            font-size: 30px;
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        }
+        p{
+            margin: 20px;
+            margin-top: 50px;
+            font-size: 16px;
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
         }
     }
 }

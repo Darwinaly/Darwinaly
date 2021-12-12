@@ -698,34 +698,30 @@ html {
   }
   .carrusel .fondoPreguntas {
     margin-top: 15%;
-    height: 400px;
+    height: 300px;
     width: auto;
   }
   .preguntasFrecuentes {
     height: auto;
     width: 100%;
-    background-color: white;
     text-align: center;
   }
-  .preguntasFrecuentes h3 {
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    font-size: 3em;
-    font-weight: 900;
-    color: black;
-    margin-top: 60px;
-  }
   .preguntasFrecuentes .btnPreguntasFrec {
-    margin-top: 1%;
-    -webkit-margin-after: 1%;
-            margin-block-end: 1%;
-    padding: 1%;
-    height: 100px;
-    width: 95%;
-    background-color: #3b3b3b;
+    height: 200px;
+    width: 100%;
+    background-color: #0b4950;
     color: white;
+  }
+  .preguntasFrecuentes p {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 20px;
+    margin: 5px;
   }
   .preguntasFrecuentes div {
     margin: 5%;
+  }
+  .preguntasFrecuentes .btnPreguntasFrec:hover {
+    background-color: #1aa6b6;
   }
   .separador {
     width: 100%;
@@ -861,6 +857,7 @@ html {
     grid-template: "tarjeta1 tarjeta2" "tarjeta3 tarjeta4";
   }
   .divDetallesServicios .tarjeta1 {
+    text-align: center;
     border: 2px solid #18a4b4;
     margin-right: 20px;
     -ms-grid-column-align: right;
@@ -869,12 +866,14 @@ html {
     height: 400px;
   }
   .divDetallesServicios .tarjeta2 {
+    text-align: center;
     border: 2px solid #18a4b4;
     margin-left: 20px;
     width: 350px;
     height: 400px;
   }
   .divDetallesServicios .tarjeta3 {
+    text-align: center;
     border: 2px solid #18a4b4;
     margin-top: 20px;
     margin-right: 20px;
@@ -884,11 +883,23 @@ html {
     height: 400px;
   }
   .divDetallesServicios .tarjeta4 {
+    text-align: center;
     border: 2px solid #18a4b4;
     margin-top: 20px;
     margin-left: 20px;
     width: 350px;
     height: 400px;
+  }
+  .divDetallesServicios h3 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  }
+  .divDetallesServicios p {
+    margin: 20px;
+    margin-top: 50px;
+    font-size: 16px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
