@@ -17,35 +17,35 @@
 <body>
     <main>
         <header id="header">
-            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <nav class="navbar navbar-expand-md bg-info navbar-dark">
                 <!-- Brand -->
                 <a class="navbar-brand" href="../index.html">GESTORES UY</a>
+      
                 <!-- Toggler/collapsibe Button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+      
                 <!-- Navbar links -->
-                <div class="collapse navbar-collapse justify-content-end bg-dark navbar-dark" id="collapsibleNavbar">
+                <div class="collapse navbar-collapse justify-content-end bg-info navbar-dark" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link font-weight-bold text-white" href="../index.html#divServicios">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#divServicios">Servicios</a>
+                            <a class="nav-link font-weight-bold text-white" href="preguntasFrecuentes.html">Preguntas Frecuentes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#preguntasFrecuentes">Preguntsas Frecuentes</a>
+                            <a class="nav-link font-weight-bold text-white" href="#contacto">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#contacto">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
+                            <a class="nav-link font-weight-bold text-white" href="blog.html">Blog</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
+        <div class="separador1" id="separador1"><img src="../img/separador1.JPG" alt=""></div>
         <div class="articulos" id="articulos">
             <article class="articulo1" id="articulo1">
                 <a href="articulo8manerasSimplesdeAhorrar.html"><img src="../img/ahorrar.jpg" alt="8 maners de ahorrar"></a>
@@ -72,22 +72,20 @@
                 <a href="articuloComidaFuturo.html"><h4>Alimentos del futuro</h4></a>
             </article>
         </div>    
+        <div class="separador" id="separador"><img src="../img/separador.JPG" alt=""></div>
         <footer class="contacto" id="contacto">
             <div class="divForm" id="divForm">
                 <form class="divForm__cuerpo">
-                    <div class="divForm1" id="divForm1">
-                        <div class="form-group">
-                            <label for="nombreCompleto"><h4>Nombre Completo</h4></label>
-                            <input type="text" class="form-control" id="nombreCompleto" placeholder="Nombre Completo" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="correoElectronico"><h4>Correo Electronico</h4></label>
-                            <input type="email" class="form-control" id="correoElectronico" placeholder="nombre@ejemplo.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="tipoDeTramite"><h4>Tipo de tramite</h4></label>
-                            <select class="form-control" id="tipoDeTramite">
-                            <option>Otros</option>
+                <div class="divForm1" id="divForm1">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nombreCompleto" placeholder="Nombre Completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="correoElectronico" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="tipoDeTramite">
+                            <option>Seleccione tipo de tramite</option>
                             <option>Inscripciones, habilitaciones INAC</option>
                             <option>Gestion integral MTOP</option>
                             <option>Solicitudes de certificados especiales BPS</option>
@@ -99,26 +97,39 @@
                             <option>Reconocimientos de servicios domesticos</option>
                             <option>Regularizacion de obras</option>
                         </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="dejeSuComentario"><h4>Deje su comentario</h4></label>
-                            <textarea class="form-control" id="dejeSuComentario" rows="3" required></textarea>
-                        </div>
                     </div>
-                    <div class="divForm2" id="divForm2">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                        <button type="reset" class="btn btn-danger">Borrar</button>
+                    <div class="form-group">
+                        <textarea class="form-control" id="dejeSuComentario" rows="3" placeholder="Deje su comentario" required></textarea>
                     </div>
+                </div>
+                <div class="divForm2" id="divForm2">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="reset" class="btn btn-danger">Borrar</button>
+                </div>
                 </form>
             </div>
-            <div class="pieFooter" id="pieFooter">
-                <div class="copyrigth" id="copyrigth">
-                    <p>Copyright © Todos los derechos reservados</p>
-                    <a href="mapaDelSitio">Mapa del Sitio</a>
-                </div>
-                <div class="redes" id="redes">
-                    <a href="https://es-la.facebook.com/"><img src="../img/facebook.png" alt="Facebook"></a><a href="https://www.instagram.com/"><img src="../img/instagram.png" alt="Instagram"></a>
-                </div>
+            <div class="divMapa" id="divMapa">
+                <p><strong>Mapa del Sitio</strong></p>
+                <ul>
+                    <li><a href=""><strong>Home</strong></a></li>
+                    <li>
+                        <a href=""><strong>Servicios</strong>            
+                            <ul>
+                                <li><a href=""><strong>Inscripcion de Empresas</strong></a></li>
+                                <li><a href=""><strong>Regularizar o Clausurar</strong></a></li>
+                                <li><a href=""><strong>Gestion ante Organismos</strong></a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a href=""><strong>Preguntas Frecuentes</strong></a></li>
+                    <li><a href=""><strong>Contacto</strong></a></li>
+                    <li><a href=""><strong>Blog</strong></a></li>
+                </ul>
+                <p>Copyright © Todos los derechos reservados</p>
+            </div>
+            <div class="divRedes" id="divRedes">
+                <a href="https://es-la.facebook.com/"><img src="../img/facebook.png" alt="Facebook"></a><br>
+                <a href="https://www.instagram.com/"><img src="../img/instagram.png" alt="Instagram"></a>
             </div>
         </footer>
     </main>
