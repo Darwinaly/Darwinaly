@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Gestoria y servicios de Contaduria para usuarios y empresas. Con amplio conocimiento de las gestiones ante el estado, brindamos celeridad y apoyo a tus necesidades">
   <meta name="keywords" content="Gestion ante organismos, Inscripciones habilitaciones INAC, Gestion integral MTOP, Certificados especiales BPS, Inscribir Empresa, Inscripcion Monotributo, Inscripcion pequeña empresa literal E, Inscripcion profesional universitario, Inscripcion IVA general, Regularizar o clausurar, Clausurar mi empresa en BPS-DGI, Servicios Domesticos, Regularizacion de obras">
-  <link rel="shorcut icon" href="img/favicon.png">
+  <link rel="shorcut icon" href="../img/favicon.png">
   <link rel="stylesheet" href="../estilos/estilos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,37 +17,35 @@
 <body>
   <main>
     <header id="header">
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <nav class="navbar navbar-expand-md bg-info navbar-dark">
         <!-- Brand -->
         <a class="navbar-brand" href="../index.html">GESTORES UY</a>
-        
+    
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-          
+    
         <!-- Navbar links -->
-        <div class="collapse navbar-collapse justify-content-end bg-dark navbar-dark" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse justify-content-end bg-info navbar-dark" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">Inicio</a>
+              <a class="nav-link font-weight-bold text-white" href="../index.html#divServicios">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../index.html#divServicios">Servicios</a>
+              <a class="nav-link font-weight-bold text-white" href="preguntasFrecuentes.html">Preguntas Frecuentes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../index.html#preguntasFrecuentes">Preguntsas Frecuentes</a>
+              <a class="nav-link font-weight-bold text-white" href="#contacto">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../index.html#contacto">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../paginas/blog.html">Blog</a>
+              <a class="nav-link font-weight-bold text-white" href="blog.html">Blog</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+    <div class="separador1" id="separador1"><img src="../img/separador1.JPG" alt=""></div>
     <article class="articulosEspecificos">
       <h4>8 maneras de ahorrar dinero</h4>
       <p>El primer paso para comenzar a ahorrar dinero es determinar cuánto gasta. Haga un seguimiento de todos sus gastos; eso quiere decir cada taza de café, artículo para el hogar y propina en efectivo.<br>
@@ -70,6 +68,66 @@
         Dese un “tiempo para reflexionar”: cuando se sienta tentado a hacer una compra no esencial, espere unos días. Se alegrará de no haberla hecho, o estará listo para ahorrar para hacerla
       </p>
     </article>
+    <div class="separador" id="separador"><img src="../img/separador.JPG" alt=""></div>
+    <footer class="contacto" id="contacto">
+      <div class="divForm" id="divForm">
+        <form class="divForm__cuerpo">
+          <div class="divForm1" id="divForm1">
+            <div class="form-group">
+              <input type="text" class="form-control" id="nombreCompleto" placeholder="Nombre Completo" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="correoElectronico" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="form-group">
+              <select class="form-control" id="tipoDeTramite">
+                <option>Seleccione tipo de tramite</option>
+                <option>Inscripciones, habilitaciones INAC</option>
+                <option>Gestion integral MTOP</option>
+                <option>Solicitudes de certificados especiales BPS</option>
+                <option>Inscripcion de Monotributo</option>
+                <option>Inscripcion pequeña empresa literal E</option>
+                <option>Inscripcion profecional universitario</option>
+                <option>Inscripcion IVA general</option>
+                <option>Clausurar mi empresa en BPS-DGI</option>
+                <option>Reconocimientos de servicios domesticos</option>
+                <option>Regularizacion de obras</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="dejeSuComentario" rows="3" placeholder="Deje su comentario" required></textarea>
+            </div>
+          </div>
+          <div class="divForm2" id="divForm2">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-danger">Borrar</button>
+          </div>
+        </form>
+      </div>
+      <div class="divMapa" id="divMapa">
+        <p><strong>Mapa del Sitio</strong></p>
+        <ul>
+          <li><a href=""><strong>Home</strong></a></li>
+          <li>
+            <a href=""><strong>Servicios</strong>            
+              <ul>
+                <li><a href=""><strong>Inscripcion de Empresas</strong></a></li>
+                <li><a href=""><strong>Regularizar o Clausurar</strong></a></li>
+                <li><a href=""><strong>Gestion ante Organismos</strong></a></li>
+              </ul>
+            </a>
+          </li>
+          <li><a href=""><strong>Preguntas Frecuentes</strong></a></li>
+          <li><a href=""><strong>Contacto</strong></a></li>
+          <li><a href=""><strong>Blog</strong></a></li>
+        </ul>
+        <p>Copyright © Todos los derechos reservados</p>
+      </div>
+      <div class="divRedes" id="divRedes">
+        <a href="https://es-la.facebook.com/"><img src="../img/facebook.png" alt="Facebook"></a><br>
+        <a href="https://www.instagram.com/"><img src="../img/instagram.png" alt="Instagram"></a>
+      </div>
+    </footer>
   </main>
 
   <a href="#" class="subir">

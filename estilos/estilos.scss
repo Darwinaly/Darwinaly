@@ -9,7 +9,7 @@ html {
     /*height: 100%;*/
 }
 
-$colorFuente: #b88900;
+$colorFuente: black;
 $blanco: white;
 $pxcien: 100px;
 $tema:blanc;
@@ -17,7 +17,7 @@ $tema:blanc;
 
 
 
-@media (min-width:320px) and (max-width:767px){
+@media (min-width:31px) and (max-width:1px){
 
     .navbar{ grid-area: navbar;}
     .div{grid-area: div;}
@@ -294,9 +294,7 @@ $tema:blanc;
     
 }
 
-
-
-@media (min-width:768px) and (max-width:900px){
+@media (min-width:320px) and (max-width:767px){
 
     .navbar{ grid-area: navbar;}
     .div{grid-area: div;}
@@ -315,15 +313,15 @@ $tema:blanc;
                         "contacto";
     }
 
-    .h3NuestrosServicios {grid-area: h3NuestrosServicios;}
     .divServicios__servicio1{grid-area: divServicios__servicio1;}
     .divServicios__servicio2{grid-area: divServicios__servicio2;}
     .divServicios__servicio3{grid-area: divServicios__servicio3;}
 
     .divServicios{
         display: grid;
-        grid-template:  "h3NuestrosServicios h3NuestrosServicios h3NuestrosServicios"
-                        "divServicios__servicio1 divServicios__servicio2 divServicios__servicio3";
+        grid-template:  "divServicios__servicio1" 
+                        "divServicios__servicio2" 
+                        "divServicios__servicio3";
     }
 
     .h3pf{grid-area: h3pf;}
@@ -336,180 +334,225 @@ $tema:blanc;
 
     .preguntasFrecuentes{
         display: grid;
-        grid-template:  "h3pf h3pf h3pf"
-                        "pf1 pf2 pf3"
-                        "pf4 pf5 pf6";
+        grid-template:  "pf1" 
+                        "pf2"
+                        "pf3" 
+                        "pf4"
+                        "pf5" 
+                        "pf6";
+    }
+
+
+    .divForm {grid-area: divForm;}
+    .divMapa {grid-area: divMapa;}
+    .divRedes {grid-area: divRedes;}
+    .contacto{
+        display: grid;
+        grid-template:  "divForm divForm"
+                        "divMapa divRedes";
     }
 
     .navbar {
-        height: 90px;
+        height: 100px;
+        .navbar-nav{
+            text-align:center;
+            width: 100%;
+        }
+        .navbar-brand{
+            font-size: 40px;
+        }
+        a{
+            font-size: 15px;
+            margin-right: 5px;
+            color: white;
+
+        }
     }
 
     .div{
-        background-image: url(img/fondoPreguntas.png);
-        background-size: auto;
-        background-repeat: repeat;
         height: auto;
         text-align: center;
         width: 100%;
-        .div__h1{
-            font-family: 'Zen Kaku Gothic Antique', sans-serif;
-            font-size: 3em;
-            color: $colorFuente;
-            padding-top: 3%;
+        .divH1P{
+            .div__h1{
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                font-size: 40px;
+                color: black;
+                padding-top: 8%;
+                margin: 3%;
+            }
+            .div__p{
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                font-size: 20px;
+                color: black;
+                padding-top: 4%;
+                margin: 5%;
+                margin-top: 2%;
+            }
         }
-        .div__p{
-            font-family: 'Zen Kaku Gothic Antique', sans-serif;
-            font-size: 1.5em;
-            color: $colorFuente;
-            margin: 3%;
-        }
-        .div__btn{
-            height: 40px;
+        .divBtn{
+            font-size: 20px;
+            align-items: center;
+            margin: auto;
             width: 50%;
-            margin: 20px;
+            .div__btn{
+                height: 50px;
+                width: 80%;
+                margin: 2px;
+            }
         }
+
     }
 
     .divServicios{
         height: auto;
         width: 100%;
-        background-color: $blanco;
-        text-align: center;
-
-
-        h3{
-            font-family: 'Zen Kaku Gothic Antique', sans-serif;
-            font-size: 3em;
-            font-weight: 900;
-            color: $colorFuente;  
-            margin-top: 60px;          
-        }       
-
         .divServicios__servicio1{
             height: auto;
             text-align: center;
-            h2{
-                font-family: 'Zen Kaku Gothic Antique', sans-serif;
-                padding-top: 40px;
-                font-size: 1.2em;
-                font-weight: 900;
+            img{
+                width: 350px;
+                margin-top: 10px;
             }
-            .divServicios__btn{
-                height: 50px;
-                width: 85%;
-                margin-top: 5px;
+            img:hover{ 
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05)
             }
-
+            .btn{
+                margin-top: 20px;
+            }
         }
         .divServicios__servicio2{
             height: auto;
             text-align: center;
-            h2{
-                font-family: 'Zen Kaku Gothic Antique', sans-serif;
-                padding-top: 40px;
-                font-size: 1.2em;
-                font-weight: 900;
+            img{
+                width: 350px;
+                margin-top: 30px;
             }
-            .divServicios__btn{
-                height: 50px;
-                width: 85%;
-                margin-top: 5px;
+            img:hover{ 
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05)
             }
-
-
+            .btn{
+                margin-top: 20px;
+            }
         }
         .divServicios__servicio3{
             height: auto;
             text-align: center;
-            h2{
-                font-family: 'Zen Kaku Gothic Antique', sans-serif;
-                padding-top: 40px;
-                font-size: 1.2em;
-                font-weight: 900;
+            img{
+                width: 350px;
+                margin-top: 30px;
             }
-            .divServicios__btn{
-                height: 50px;
-                width: 85%;
-                margin-top: 5px;
+            img:hover{ 
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05)
             }
-
+            .btn{
+                margin-top: 20px;
+            }
         }
 
     }
 
     .carrusel{
-        background-color: #747474;
+        margin-top: 30px;
         height: auto;
         width: 100%;
         text-align: center;
         .fondoPreguntas{
-            margin-top: 5%;
-            margin-block-end: 15%;
-            height: 9rem;
+         
+            height: 300px;
             width: auto;
-        }
-        h2{
-            font-size: 2em;
         }
     }
 
     .preguntasFrecuentes{
         height: auto;
         width: 100%;
-        background-color: $blanco;
-        text-align: center;
-        h3{
-            font-family: 'Zen Kaku Gothic Antique', sans-serif;
-            font-size: 3em;
-            font-weight: 900;
-            color: $colorFuente;  
-            margin-top: 60px;          
-        }  
+        text-align: center; 
         .btnPreguntasFrec{
-            margin-top: 1%;
-            margin-block-end: 1%;
-            padding: 1%;
-            height: 100px;
-            width: 95%;
-            background-color: #3b3b3b;
-            color: $blanco;
-        }   div{
+            height: 150px;
+            width: 100%;
+            background-color:#0b4950 ;
+            color: white;
+        }  
+        p{
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: 18px;
+            margin: 5px;
+        } 
+        div{
             margin: 5%;
+        }
+        .btnPreguntasFrec:hover{
+            background-color:#1aa6b6 ;
+        }
+    }
+
+    .separador{
+        width: 100%;
+        height: 50px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .separador1{
+        width: 100%;
+        height: 50px;
+        img{
+            width: 100%;
+            height: 100%;
         }
     }
 
     .contacto{
-        height: 700px;
+        height: auto;
         width: 100%;
-        background-color: black;
+        text-align: center;
+        background-color: #116e79;
         .form-group{
-            width: 80%;
-            margin-left: 10%;
-            padding-top: 4%;
-        }
-        h4{
-            color: $blanco;
-            font-size: 20px;
-            margin-top: 10%;
+            width: 90%;
+            padding-top: 3%;
+            margin: auto;
         }
         .btn{
-            width: 30%;
-            margin-left: 13%;
+            width: 40%;
+            margin-top: 15px;
         }
-        .pieFooter{
-            background-color: black;
-            text-align: center;
-            color: white;
-            padding-top: 50px;
-            img{
-                margin: 20px;
-                height: 30px;
-                width: auto;
+        .divMapa{
+            width: auto;
+            margin-top: 50px;
+            text-align: left;
+            ul{
+                margin-left: 20%;
+                color:white;
+                a{
+                    color: white;
+                }
             }
-            
-
+            p{
+                margin-left: 10%;
+                color: white;
+            }
         }
+        .divRedes{
+            justify-self: end;
+            width: 30px;
+            margin-right: 25px;
+            img{
+                margin-top: 65px;
+                width: 30px;
+
+            }
+            img:hover{ 
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1)
+            }
+        }
+
     }
 
     .subir{
@@ -518,8 +561,12 @@ $tema:blanc;
         position: fixed;
         bottom: 50px;
         right: 20px;
-        
+        img:hover{ 
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1)
+        }
     }
+
 
     .articulo1{grid-area: articulo1;}
     .articulo2{grid-area: articulo2;}
@@ -529,17 +576,22 @@ $tema:blanc;
     .articulo6{grid-area: articulo6;}
     .articulos{
         display: grid;
-        grid-template:  "articulo1 articulo2"
-                        "articulo3 articulo4"
-                        "articulo5 articulo6";
+        grid-template:  "articulo1" 
+                        "articulo2"
+                        "articulo3" 
+                        "articulo4"
+                        "articulo5" 
+                        "articulo6";
     }
     article{
-        border: #3b3b3b; 
-        border-style: solid;
-        border-width: 15px;
+        border: 1px solid #18a4b4 ;
+        width: 305px;
+        height: auto;
+        justify-self: center;
+        margin-top: 20px;
         img{
-        width: 90%;
-        margin: 5%;
+        width: 100%;
+        height:auto;
         }
         h4{
             text-align: center;
@@ -548,16 +600,446 @@ $tema:blanc;
     }
 
     .articulosEspecificos{
+        width: auto;
+        border: 0px;
+        text-align: center;
+        margin: 15px;
         h4{
             font-size: 30px;
             padding-top: 20px;
         }
+    }
+
+    .tarjeta1{grid-area: tarjeta1;}
+    .tarjeta2{grid-area: tarjeta2;}
+    .tarjeta3{grid-area: tarjeta3;}
+    .tarjeta4{grid-area: tarjeta4;}
+
+    .divDetallesServicios{
+        display: grid;
+        grid-template:  "tarjeta1" 
+                        "tarjeta2"
+                        "tarjeta3"  
+                        "tarjeta4";
+    }
+
+    .divDetallesServicios{
+        .tarjeta1{
+            text-align: center;
+            border: 1px solid #18a4b4 ;
+            justify-self: center;
+            width: 300px;
+            height: 350px;
+        }
+        .tarjeta2{
+            text-align: center;
+            border: 1px solid #18a4b4 ;
+            justify-self: center;
+            width: 300px;
+            height: 350px;
+            margin-top: 20px;
+        }
+        .tarjeta3{
+            text-align: center;
+            border: 1px solid #18a4b4 ;
+            justify-self: center;
+            width: 300px;
+            height: 350px;
+            margin-top: 20px;
+        }
+        .tarjeta4{
+            text-align: center;
+            border: 1px solid #18a4b4 ;
+            justify-self: center;
+            width: 300px;
+            height: 350px;
+            margin-top: 20px;
+        }
+        h3{
+            margin: 10px;
+            font-size: 20px;
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        }
         p{
-            margin: 15px;
+            margin: 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:900px){
+
+    .navbar{ grid-area: navbar;}
+    .div{grid-area: div;}
+    .divServicios{grid-area: divServicios;}
+    .carrusel{grid-area: carrusel;}
+    .contacto{grid-area: contacto;}
+    .preguntasFrecuentes{grid-area: preguntasFrecuentes;}
+
+    .main{
+        display: grid;
+        grid-template:  "navbar navbar"         
+                        "div carrusel"
+                        "divServicios divServicios"
+                        "preguntasFrecuentes preguntasFrecuentes"
+                        "contacto contacto";
+    }
+
+    .divServicios__servicio1{grid-area: divServicios__servicio1;}
+    .divServicios__servicio2{grid-area: divServicios__servicio2;}
+    .divServicios__servicio3{grid-area: divServicios__servicio3;}
+
+    .divServicios{
+        display: grid;
+        grid-template:  "divServicios__servicio1" 
+                        "divServicios__servicio2" 
+                        "divServicios__servicio3";
+    }
+
+    .h3pf{grid-area: h3pf;}
+    .pf1 {grid-area: pf1;}
+    .pf2 {grid-area: pf2;}
+    .pf3 {grid-area: pf3;}
+    .pf4 {grid-area: pf4;}
+    .pf5 {grid-area: pf5;}
+    .pf6 {grid-area: pf6;}
+
+    .preguntasFrecuentes{
+        display: grid;
+        grid-template:  "pf1 pf2"
+                        "pf3 pf4"
+                        "pf5 pf6";
+    }
+
+
+    .divForm {grid-area: divForm;}
+    .divMapa {grid-area: divMapa;}
+    .divRedes {grid-area: divRedes;}
+    .contacto{
+        display: grid;
+        grid-template:  "divForm divRedes"
+                        "divMapa divMapa";
+    }
+
+    .navbar {
+        height: 100px;
+        .navbar-nav{
+            text-align: right;
+        }
+        .navbar-brand{
+            font-size: 40px;
+        }
+        a{
+            font-size: 15px;
+            margin-right: 5px;
+            color: white;
+
+        }
+        a:hover{ 
+            transform: scale(1.1)
+        }
+    }
+
+    .div{
+        float: left;
+        height: 500px;
+        text-align: center;
+        width: 60%;
+        .divH1P{
+            .div__h1{
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                font-size: 40px;
+                color: black;
+                padding-top: 8%;
+                margin: 3%;
+            }
+            .div__p{
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                font-size: 20px;
+                color: black;
+                padding-top: 4%;
+                margin: 5%;
+                margin-top: 2%;
+            }
+        }
+        .divBtn{
+            font-size: 20px;
+            align-items: center;
+            margin: auto;
+            width: 50%;
+            .div__btn{
+                height: 50px;
+                width: 80%;
+                margin: 2px;
+            }
+        }
+
+    }
+
+    .divServicios{
+        height: auto;
+        width: 100%;
+        .divServicios__servicio1{
+            height: auto;
+            text-align: center;
+            img{
+                width: 350px;
+                margin-top: 10px;
+            }
+            img:hover{ 
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05)
+            }
+            .btn{
+                margin-top: 20px;
+            }
+        }
+        .divServicios__servicio2{
+            height: auto;
+            text-align: center;
+            img{
+                width: 350px;
+                margin-top: 30px;
+            }
+            img:hover{ 
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05)
+            }
+            .btn{
+                margin-top: 20px;
+            }
+        }
+        .divServicios__servicio3{
+            height: auto;
+            text-align: center;
+            img{
+                width: 350px;
+                margin-top: 30px;
+            }
+            img:hover{ 
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05)
+            }
+            .btn{
+                margin-top: 20px;
+            }
+        }
+
+    }
+
+    .carrusel{
+        float: right;
+        height: 500px;
+        width: 40%;
+        text-align: center;
+        .fondoPreguntas{
+            margin-top: 15%;
+            height: 300px;
+            width: auto;
+        }
+    }
+
+    .preguntasFrecuentes{
+        height: auto;
+        width: 100%;
+        text-align: center; 
+        .btnPreguntasFrec{
+            height: 200px;
+            width: 100%;
+            background-color:#0b4950 ;
+            color: white;
+        }  
+        p{
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: 20px;
+            margin: 5px;
+        } 
+        div{
+            margin: 5%;
+        }
+        .btnPreguntasFrec:hover{
+            background-color:#1aa6b6 ;
+        }
+    }
+
+    .separador{
+        width: 100%;
+        height: 50px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .separador1{
+        width: 100%;
+        height: 50px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .contacto{
+        height: auto;
+        width: 100%;
+        text-align: left;
+        background-color: #116e79;
+        // background-image: url(../img/backgroundFotter.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        .form-group{
+            width: 600px;
+            padding-top: 3%;
+            margin-left: 50px;
+        }
+        .btn{
+            width: 150px;
+            margin: 3%;
+            margin-left: 120px;
+        }
+        .divMapa{
+            border-top: 0.5px solid white;
+            width: auto;
+            margin-top: 50px;
+            padding-top: 50px;
+            ul{
+                margin-left: 100px;
+                color:white;
+                a{
+                    color: white;
+                }
+            }
+            p{
+                margin-left: 100px;
+                color: white;
+            }
+        }
+        .divRedes{
+            justify-self: end;
+            width: 30px;
+            margin-right: 25px;
+            img{
+                margin-top: 75px;
+                width: 30px;
+
+            }
+            img:hover{ 
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1)
+            }
+        }
+
+    }
+
+    .subir{
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        img:hover{ 
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1)
         }
     }
 
 
+    .articulo1{grid-area: articulo1; justify-self: right;}
+    .articulo2{grid-area: articulo2;}
+    .articulo3{grid-area: articulo3; justify-self: right;}
+    .articulo4{grid-area: articulo4;}
+    .articulo5{grid-area: articulo5; justify-self: right;}
+    .articulo6{grid-area: articulo6;}
+    .articulos{
+        display: grid;
+        grid-template:  "articulo1 articulo2"
+                        "articulo3 articulo4"
+                        "articulo5 articulo6";
+    }
+    article{
+        margin: 30px;
+        border: 1px solid #18a4b4 ;
+        width: 305px;
+        height: auto;
+        img{
+        width: 100%;
+        height:auto;
+        }
+        h4{
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+
+    .articulosEspecificos{
+        width: 90%;
+        border: 0px;
+        h4{
+            margin: 30px;
+            font-size: 30px;
+            padding-top: 20px;
+        }
+    }
+
+    .tarjeta1{grid-area: tarjeta1;}
+    .tarjeta2{grid-area: tarjeta2;}
+    .tarjeta3{grid-area: tarjeta3;}
+    .tarjeta4{grid-area: tarjeta4;}
+
+    .divDetallesServicios{
+        display: grid;
+        grid-template:  "tarjeta1 tarjeta2"
+                        "tarjeta3 tarjeta4";
+    }
+
+    .divDetallesServicios{
+        .tarjeta1{
+            text-align: center;
+            border: 1px solid #18a4b4 ;
+            margin-right: 20px;
+            justify-self: right;
+            width: 300px;
+            height: 350px;
+        }
+        .tarjeta2{
+            text-align: center;
+            border: 1px solid #18a4b4 ;
+            margin-left: 20px;
+            width: 300px;
+            height: 350px;
+        }
+        .tarjeta3{
+            text-align: center;
+            border: 1px solid #18a4b4 ;
+            margin-top: 20px;
+            margin-right: 20px;
+            justify-self: right;
+            width: 300px;
+            height: 350px;
+        }
+        .tarjeta4{
+            text-align: center;
+            border: 1px solid #18a4b4 ;
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 300px;
+            height: 350px;
+        }
+        h3{
+            margin: 10px;
+            font-size: 20px;
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        }
+        p{
+            margin: 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        }
+    }
 }
 
 @media (min-width:901px){
@@ -571,23 +1053,20 @@ $tema:blanc;
 
     .main{
         display: grid;
-        grid-template:  "navbar"         
-                        "div"
-                        "carrusel"
-                        "divServicios"
-                        "preguntasFrecuentes"
-                        "contacto";
+        grid-template:  "navbar navbar"         
+                        "div carrusel"
+                        "divServicios divServicios"
+                        "preguntasFrecuentes preguntasFrecuentes"
+                        "contacto contacto";
     }
 
-    .h3NuestrosServicios {grid-area: h3NuestrosServicios;}
     .divServicios__servicio1{grid-area: divServicios__servicio1;}
     .divServicios__servicio2{grid-area: divServicios__servicio2;}
     .divServicios__servicio3{grid-area: divServicios__servicio3;}
 
     .divServicios{
         display: grid;
-        grid-template:  "h3NuestrosServicios h3NuestrosServicios h3NuestrosServicios"
-                        "divServicios__servicio1 divServicios__servicio2 divServicios__servicio3";
+        grid-template: "divServicios__servicio1 divServicios__servicio2 divServicios__servicio3" 400px;
     }
 
     .h3pf{grid-area: h3pf;}
@@ -605,40 +1084,40 @@ $tema:blanc;
                         "pf4 pf5 pf6";
     }
 
-    .divH1P{grid-area: divH1P;}
-    .divBtn{grid-area: divBtn;}
 
-    .div{
+    .divForm {grid-area: divForm;}
+    .divMapa {grid-area: divMapa;}
+    .divRedes {grid-area: divRedes;}
+    .contacto{
         display: grid;
-        grid-template:  "divH1P divH1P divBtn"/
-                            33% auto 33%;
-    }
-
-    .divForm1 {grid-area: divForm1;}
-    .divForm2 {grid-area: divForm2;}
-
-    .divForm__cuerpo{
-        display: grid;
-        grid-template: "divForm1 divForm2"/
-                            60% 40%;
+        grid-template:  "divForm divMapa divRedes";
     }
 
     .navbar {
-        height: 90px;
+        height: 100px;
         .navbar-nav{
             text-align: right;
+        }
+        .navbar-brand{
+            font-size: 40px;
+        }
+        a{
+            font-size: 20px;
+            margin-right: 5px;
+            color: white;
+
+        }
+        a:hover{ 
+            transform: scale(1.1)
         }
     }
 
     .div{
-        background-image: url(img/fondoPreguntas.png);
-        background-size: auto;
-        background-repeat: repeat;
+        float: left;
         height: 500px;
         text-align: center;
-        width: 100%;
+        width: 60%;
         .divH1P{
-            text-align: left;
             .div__h1{
                 font-family: 'Zen Kaku Gothic Antique', sans-serif;
                 font-size: 4em;
@@ -651,13 +1130,15 @@ $tema:blanc;
                 font-size: 1.5em;
                 color: $colorFuente;
                 padding-top: 4%;
-                margin: 3%;
+                margin: 5%;
+                margin-top: 2%;
             }
         }
         .divBtn{
+            font-size: 20px;
             align-items: center;
             margin: auto;
-            width: 100%;
+            width: 50%;
             .div__btn{
                 height: 50px;
                 width: 80%;
@@ -668,146 +1149,154 @@ $tema:blanc;
     }
 
     .divServicios{
+        padding-top: 100px;
         height: auto;
         width: 100%;
-        background-color: $blanco;
-        text-align: center;
-
-
-        h3{
-            font-family: 'Zen Kaku Gothic Antique', sans-serif;
-            font-size: 3em;
-            font-weight: 900;
-            color: $colorFuente;  
-            margin-top: 60px;          
-        }       
-
         .divServicios__servicio1{
             height: auto;
             text-align: center;
-            h2{
-                font-family: 'Zen Kaku Gothic Antique', sans-serif;
-                padding-top: 40px;
-                font-size: 1.2em;
-                font-weight: 900;
+            img{
+                width: 280px;
+                margin: auto;
             }
-            .divServicios__btn{
-                height: 50px;
-                width: 85%;
-                margin-top: 5px;
+            img:hover{ 
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05)
             }
-
+            .btn{
+                margin-top: 20px;
+            }
         }
         .divServicios__servicio2{
             height: auto;
             text-align: center;
-            h2{
-                font-family: 'Zen Kaku Gothic Antique', sans-serif;
-                padding-top: 40px;
-                font-size: 1.2em;
-                font-weight: 900;
+            img{
+                width: 280px;
+                margin: auto;
             }
-            .divServicios__btn{
-                height: 50px;
-                width: 85%;
-                margin-top: 5px;
+            img:hover{ 
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05)
             }
-
-
+            .btn{
+                margin-top: 20px;
+            }
         }
         .divServicios__servicio3{
             height: auto;
             text-align: center;
-            h2{
-                font-family: 'Zen Kaku Gothic Antique', sans-serif;
-                padding-top: 40px;
-                font-size: 1.2em;
-                font-weight: 900;
+            img{
+                width: 280px;
+                margin: auto;
             }
-            .divServicios__btn{
-                height: 50px;
-                width: 85%;
-                margin-top: 5px;
+            img:hover{ 
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05)
             }
-
+            .btn{
+                margin-top: 20px;
+            }
         }
 
     }
 
     .carrusel{
-        background-color: #747474;
-        height: auto;
-        width: 100%;
+        float: right;
+        height: 500px;
+        width: 40%;
         text-align: center;
         .fondoPreguntas{
-            margin-top: 5%;
-            margin-block-end: 15%;
-            height: 9rem;
+            margin-top: 15%;
+            height: 300px;
             width: auto;
-        }
-        h2{
-            font-size: 2em;
         }
     }
 
     .preguntasFrecuentes{
         height: auto;
         width: 100%;
-        background-color: $blanco;
-        text-align: center;
-        h3{
-            font-family: 'Zen Kaku Gothic Antique', sans-serif;
-            font-size: 3em;
-            font-weight: 900;
-            color: $colorFuente;  
-            margin-top: 60px;          
-        }  
+        text-align: center; 
         .btnPreguntasFrec{
-            margin-top: 1%;
-            margin-block-end: 1%;
-            padding: 1%;
-            height: 100px;
-            width: 95%;
-            background-color: #3b3b3b;
-            color: $blanco;
-        }   div{
+            height: 200px;
+            width: 100%;
+            background-color:#0b4950 ;
+            color: white;
+        }  
+        p{
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: 20px;
+            margin: 5px;
+        } 
+        div{
             margin: 5%;
+        }
+        .btnPreguntasFrec:hover{
+            background-color:#1aa6b6 ;
+        }
+    }
+
+    .separador{
+        width: 100%;
+        height: 50px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .separador1{
+        width: 100%;
+        height: 50px;
+        img{
+            width: 100%;
+            height: 100%;
         }
     }
 
     .contacto{
         height: auto;
         width: 100%;
-        background-color: black;
+        text-align: left;
+        background-color: #116e79;
+        // background-image: url(../img/backgroundFotter.png);
+        background-repeat: no-repeat;
+        background-position: right;
         .form-group{
-            width: 90%;
-            margin-left: 10%;
-            padding-top: 3%;
+            width: 400px;
+            padding-top: 1%;
+            margin-left: 50px;
         }
-        h4{
-            color: $blanco;
-            font-size: 20px;
-            margin-top: 10%;
+        .btn{
+            width: 150px;
+            margin: 3%;
+            margin-left: 55px;
         }
-        .divForm2{
-            margin: auto;
-            text-align: center;
-            width: 100%;
-            .btn{
-                width: 70%;
-                margin-left: 13%;
-                margin-top: 5%;
+        .divMapa{
+            width: auto;
+            margin-top: 20px;
+            ul{
+                margin-left: 30px;
+                color:white;
+                a{
+                    color: white;
+                }
+            }
+            p{
+                color: white;
             }
         }
-        .pieFooter{
-            background-color: black;
-            text-align: center;
-            color: white;
-            padding-top: 50px;
+        .divRedes{
+            justify-self: end;
+            width: 30px;
+            margin-right: 25px;
             img{
-                margin: 20px;
-                height: 30px;
-                width: auto;
+                margin-top: 75px;
+                width: 30px;
+
+            }
+            img:hover{ 
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1)
             }
         }
 
@@ -819,27 +1308,33 @@ $tema:blanc;
         position: fixed;
         bottom: 50px;
         right: 20px;
-        
+        img:hover{ 
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1)
+        }
     }
 
-    .articulo1{grid-area: articulo1;}
+
+    .articulo1{grid-area: articulo1; justify-self: right;}
     .articulo2{grid-area: articulo2;}
-    .articulo3{grid-area: articulo3;}
+    .articulo3{grid-area: articulo3; justify-self: right;}
     .articulo4{grid-area: articulo4;}
-    .articulo5{grid-area: articulo5;}
+    .articulo5{grid-area: articulo5; justify-self: right;}
     .articulo6{grid-area: articulo6;}
     .articulos{
         display: grid;
-        grid-template:  "articulo1 articulo2 articulo3"
-                        "articulo4 articulo5 articulo6";
+        grid-template:  "articulo1 articulo2"
+                        "articulo3 articulo4"
+                        "articulo5 articulo6";
     }
     article{
-        border: #3b3b3b; 
-        border-style: solid;
-        border-width: 15px;
+        margin: 40px;
+        border: 1px solid #18a4b4 ;
+        width: 305px;
+        height: auto;
         img{
-        width: 90%;
-        margin: 5%;
+        width: 100%;
+        height:auto;
         }
         h4{
             text-align: center;
@@ -848,12 +1343,69 @@ $tema:blanc;
     }
 
     .articulosEspecificos{
+        width: 90%;
+        border: 0px;
         h4{
+            margin: 30px;
             font-size: 30px;
             padding-top: 20px;
         }
+    }
+
+    .tarjeta1{grid-area: tarjeta1;}
+    .tarjeta2{grid-area: tarjeta2;}
+    .tarjeta3{grid-area: tarjeta3;}
+    .tarjeta4{grid-area: tarjeta4;}
+
+    .divDetallesServicios{
+        display: grid;
+        grid-template:  "tarjeta1 tarjeta2"
+                        "tarjeta3 tarjeta4";
+    }
+
+    .divDetallesServicios{
+        .tarjeta1{
+            text-align: center;
+            border: 2px solid #18a4b4 ;
+            margin-right: 20px;
+            justify-self: right;
+            width: 350px;
+            height: 400px;
+        }
+        .tarjeta2{
+            text-align: center;
+            border: 2px solid #18a4b4 ;
+            margin-left: 20px;
+            width: 350px;
+            height: 400px;
+        }
+        .tarjeta3{
+            text-align: center;
+            border: 2px solid #18a4b4 ;
+            margin-top: 20px;
+            margin-right: 20px;
+            justify-self: right;
+            width: 350px;
+            height: 400px;
+        }
+        .tarjeta4{
+            text-align: center;
+            border: 2px solid #18a4b4 ;
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 350px;
+            height: 400px;
+        }
+        h3{
+            margin-top: 50px;
+            font-size: 30px;
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        }
         p{
-            margin: 15px;
+            margin: 20px;
+            margin-top: 50px;
+            font-size: 16px;
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
         }
     }
 }
